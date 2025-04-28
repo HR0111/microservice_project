@@ -1,0 +1,33 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Ignore IntelliJ IDEA files
+.idea/
+
+# Ignore MySQL volumes (data files)
+api-gateway/volume-data/
+
+# Ignore volume data directories
+*/volume-data/*
+
+api-gateway/volume-data/mysql_keycloak_data/*.sock
+
+# Ignore Docker-related files and directories
+*/docker/*
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore Maven wrapper files (if using Maven)
+.mvn/
+mvnw*
+
