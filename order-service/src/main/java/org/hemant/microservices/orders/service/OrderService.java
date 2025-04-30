@@ -38,6 +38,13 @@ public class OrderService {
                   order.getOrderNumber(),
                   orderRequest.userDetails().email()  // Get email from userDetails
           );
+
+//            OrderPlacedEvent orderPlacedEvent = new OrderPlacedEvent();
+//            orderPlacedEvent.setOrderNumber(orderRequest.skuCode());
+//            orderPlacedEvent.setEmail(orderRequest.userDetails().email());
+          // name and last name
+
+
         log.info("Start - Kafka message bhej raha hai OrderPlacedEvent: " + orderPlacedEvent);
         kafkaTemplate.send("order-placed", orderPlacedEvent);
           log.info("End - Kafka message Aagaya  hai OrderPlacedEvent: " + orderPlacedEvent);
